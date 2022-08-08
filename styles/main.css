@@ -3,11 +3,18 @@ body {
   margin: auto;
 }
 
+.chose {
+  height: 20rem;
+}
 .chose img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin: 5% 0;
+}
+.chose img:hover {
+  width: 250px;
+  height: 250px;
 }
 
 #main img {
