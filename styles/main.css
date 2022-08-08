@@ -1,0 +1,65 @@
+body {
+  background-color: #e8f9fd;
+  width: 70%;
+  margin: auto;
+}
+
+.chose img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20% 0;
+}
+
+#main img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.player-img {
+  position: relative;
+  -webkit-animation: movel 3s alternate;
+          animation: movel 3s alternate;
+}
+
+@-webkit-keyframes movel {
+  0% {
+    left: -1500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes movel {
+  0% {
+    left: -1500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.com-img {
+  position: relative;
+  -webkit-animation: mover 3s alternate;
+          animation: mover 3s alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    right: -1500px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes mover {
+  0% {
+    right: -1500px;
+  }
+  100% {
+    right: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
