@@ -50,6 +50,7 @@ body {
   position: relative;
   -webkit-animation: mover 3s alternate;
           animation: mover 3s alternate;
+  transform: rotateY(180deg) !important;
 }
 
 @-webkit-keyframes mover {

@@ -3,11 +3,11 @@ const h2 = document.querySelector('.h2');
 h2.classList.add('mt-5', 'text-center');
 
 const imgs = {
-  rock: `https://thumbs.dreamstime.com/b/rock-paper-scissors-rock-hand-isolated-white-31662043.jpg`,
+  rock: `https://i0.wp.com/wrpsa.com/wp-content/uploads/2021/08/rock.png?resize=413%2C386&ssl=1`,
 
-  paper: `https://target.scene7.com/is/image/Target/FillerPaper_QUIVER-200522-1590188565921`,
+  paper: `https://i0.wp.com/wrpsa.com/wp-content/uploads/2021/08/paper.png?resize=413%2C386&ssl=1`,
 
-  scissors: `https://image.shutterstock.com/z/stock-photo-scissors-for-sewing-isolated-on-white-background-professional-scissors-for-the-seamstress-1324077986.jpg`,
+  scissors: `https://i0.wp.com/wrpsa.com/wp-content/uploads/2021/08/scissors.png?resize=413%2C386&ssl=1`,
 };
 
 const card = document.querySelector('.chose ');
