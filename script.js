@@ -37,14 +37,14 @@ function render() {
   h1.innerHTML = `ROCK PAPER AND SCISSORS`;
   compImg = imgs[getRandomImg(imgs)];
 
-  div.innerHTML = ` <div class="player-img col-6 my-5 ">
+  div.innerHTML = ` <div class="player-img col-6  ">
   <img
     src="${event.target.currentSrc}"
     alt=" pic"
   />
   </div>
 
-  <div class="com-img col-6 my-5">
+  <div class="com-img col-6 ">
   <img
     src="${compImg}"
     alt=" pic"
