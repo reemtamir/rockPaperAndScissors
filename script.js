@@ -13,9 +13,9 @@ const imgs = {
 const card = document.querySelector('.chose ');
 card.classList.add('row', 'm-auto', 'text-center');
 card.innerHTML += ` 
-<div  class="col-4 img"><img src="${imgs.rock}" class="card-img-top col" alt="..."></div>
-<div  class="col-4 img"><img src="${imgs.paper}" class="card-img-top col" alt="..."></div>
-<div  class="col-4 img"><img src="${imgs.scissors}" class="card-img-top col" alt="..."></div>`;
+<div  class="col-4 img"><img src="${imgs.rock}" alt="..."></div>
+<div  class="col-4 img"><img src="${imgs.paper}"  alt="..."></div>
+<div  class="col-4 img"><img src="${imgs.scissors}"  alt="..."></div>`;
 
 const div = document.getElementById('main');
 const pics = document.querySelectorAll('.img');
