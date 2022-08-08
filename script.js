@@ -3,7 +3,7 @@ const h2 = document.querySelector('.h2');
 h2.classList.add('mt-5', 'text-center');
 
 const imgs = {
-  rock: `https://dictionary.cambridge.org/fr/images/thumb/rock_noun_004_2211.jpg?version=5.0.248`,
+  rock: `https://thumbs.dreamstime.com/b/rock-paper-scissors-rock-hand-isolated-white-31662043.jpg`,
 
   paper: `https://target.scene7.com/is/image/Target/FillerPaper_QUIVER-200522-1590188565921`,
 
