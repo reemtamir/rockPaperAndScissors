@@ -1,6 +1,7 @@
 'use-strict';
 const h2 = document.querySelector('.h2');
-h2.classList.add('mt-5', 'text-center', 'text-danger');
+h2.classList.add('mt-5', 'text-center');
+
 const imgs = {
   rock: `https://dictionary.cambridge.org/fr/images/thumb/rock_noun_004_2211.jpg?version=5.0.248`,
 
@@ -31,6 +32,7 @@ for (let key of pics) {
 
 let compImg;
 function render() {
+  h2.style.color = getRandomColor();
   h1.classList.remove('text-danger');
   h1.innerHTML = `ROCK PAPER AND SCISSORS`;
   compImg = imgs[getRandomImg(imgs)];
@@ -63,52 +65,53 @@ function check() {
     event.target.currentSrc === imgs['scissors'] &&
     compImg === imgs['scissors']
   ) {
-    h2.innerHTML = 'even';
+    h2.innerHTML = 'even'.toUpperCase();
   } else if (
     event.target.currentSrc === imgs['scissors'] &&
     compImg === imgs['paper']
   ) {
-    h2.innerHTML = 'sizer win';
+    h2.innerHTML = 'scissors win'.toUpperCase();
     userCount++;
   } else if (
     event.target.currentSrc === imgs['scissors'] &&
     compImg === imgs['rock']
   ) {
-    h2.innerHTML = 'rock win';
+    h2.innerHTML = 'rock win'.toUpperCase();
     compCount++;
   }
 
   if (event.target.currentSrc === imgs['paper'] && compImg === imgs['paper']) {
-    h2.innerHTML = 'even';
+    h2.innerHTML = 'even'.toUpperCase();
   } else if (
     event.target.currentSrc === imgs['paper'] &&
     compImg === imgs['scissors']
   ) {
-    h2.innerHTML = 'sizer win';
+    h2.innerHTML = 'scissors win'.toUpperCase();
     compCount++;
   } else if (
     event.target.currentSrc === imgs['paper'] &&
     compImg === imgs['rock']
   ) {
-    h2.innerHTML = 'paper win';
+    h2.innerHTML = 'paper win'.toUpperCase();
     userCount++;
   }
 
   if (event.target.currentSrc === imgs['rock'] && compImg === imgs['rock']) {
-    h2.innerHTML = 'even';
+    h2.innerHTML = 'even'.toUpperCase();
   } else if (
     event.target.currentSrc === imgs['rock'] &&
     compImg === imgs['scissors']
   ) {
-    h2.innerHTML = 'rock win';
+    h2.innerHTML = 'rock win'.toUpperCase();
     userCount++;
   } else if (
     event.target.currentSrc === imgs['rock'] &&
     compImg === imgs['paper']
   ) {
-    h2.innerHTML = 'paper win';
+    h2.innerHTML = 'paper win'.toUpperCase();
     compCount++;
   }
+
   if (userCount === 5 || compCount === 5) {
     h1.innerHTML = userCount === 5 ? 'You win 😀' : 'Computer win 😁';
     h1.classList.add('text-danger');
@@ -125,4 +128,12 @@ function getRandomImg(obj) {
   }
   const random = arrOfKeys[Math.floor(Math.random() * arrOfKeys.length)];
   return random;
+}
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
